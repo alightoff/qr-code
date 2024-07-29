@@ -23,13 +23,13 @@ const QrCodeScanner = () => {
         onScan={scanHandler}
         components={{
           audio: false,
-          // finder: false
+          finder: false
         }}
         styles={{
           container: { width: 350 },
         }}
       />
-      <div className="mt-52">{info || "Тут будет информация с QR-кода..."}</div>
+      <div className="mt-36">{info || "Тут будет информация с QR-кода..."}</div>
     </div>
   );
 };
