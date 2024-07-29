@@ -29,13 +29,13 @@ const QrCodeScanner = () => {
         onScan={scanHandler}
         components={{
           audio: false,
-          finder: false
+          // finder: false
         }}
         styles={{
           container: { width: 350 },
         }}
       />
-      <div className="mt-36">
+      <div className="mt-36 md:mt-24">
         {info ? (
           isUrl(info) ? (
             <a href={info} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
